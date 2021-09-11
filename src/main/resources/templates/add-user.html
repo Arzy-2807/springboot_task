@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add  user</title>
+</head>
+<body>
+<h>Add user</h>
+<form action="#" th:action = "@{/save-user}" method = "post" th:object = "${user}" >
+    <input type="text" th:field = "*{name}" placeholder="name">
+    <br>
+    <br>
+    <input type="text" th:field = "*{age}" placeholder="age">
+    <br>
+    <br>
+    <input type="text" th:field = "*{email}" placeholder="email">
+    <br>
+    <br>
+    <input type="submit" value="Save user">
+</form>
+
+</body>
+</html>
